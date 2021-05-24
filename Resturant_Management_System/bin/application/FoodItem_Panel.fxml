@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FoodItem_Panel_Controller">
+   <children>
+      <Pane prefHeight="657.0" prefWidth="713.0">
+         <children>
+            <Label layoutX="97.0" layoutY="63.0" prefHeight="17.0" prefWidth="62.0" text="Food ID" />
+            <Label layoutX="405.0" layoutY="63.0" text="Food Name" />
+            <Label layoutX="78.0" layoutY="130.0" text="Buying Price" />
+            <Label layoutX="405.0" layoutY="130.0" text="Selling Price" />
+            <TextField fx:id="FoodID" layoutX="159.0" layoutY="59.0" onAction="#handleFoodID" />
+            <TextField fx:id="BuyingPrice" layoutX="159.0" layoutY="126.0" onAction="#handleBuyingPrice" />
+            <TextField fx:id="FoodName" layoutX="485.0" layoutY="59.0" onAction="#handleFoodName" />
+            <TextField fx:id="SellingPrice" layoutX="485.0" layoutY="126.0" onAction="#handleSellingPrice" />
+            <TableView fx:id="FooditemsTable" layoutX="66.0" layoutY="224.0" prefHeight="362.0" prefWidth="583.0">
+              <columns>
+                <TableColumn fx:id="FoodIDT" prefWidth="118.0" text="Food ID" />
+                <TableColumn fx:id="FoodNameT" prefWidth="161.0" text="Food Name" />
+                  <TableColumn fx:id="BuyingPriceT" minWidth="3.0" prefWidth="153.0" text="Buying Price" />
+                  <TableColumn fx:id="SellingPriceT" prefWidth="150.0" text="Selling Price" />
+              </columns>
+            </TableView>
+            <Button fx:id="ADD" layoutX="505.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleADDButton" prefHeight="32.0" prefWidth="106.0" text="ADD " />
+            <Button fx:id="Edit" layoutX="385.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="40.0" prefWidth="100.0" text="Edit" />
+            <Button fx:id="Delete" layoutX="533.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="40.0" prefWidth="100.0" text="Delete" />
+            <Button fx:id="Update" layoutX="385.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="40.0" prefWidth="100.0" text="Update" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

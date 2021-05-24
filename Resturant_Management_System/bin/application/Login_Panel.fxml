@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login_Panel_Controller">
+   <children>
+      <Pane prefHeight="475.0" prefWidth="600.0">
+         <children>
+            <VBox layoutX="70.0" layoutY="130.0" prefHeight="299.0" prefWidth="461.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="480.0">
+                     <children>
+                        <Label prefHeight="102.0" prefWidth="144.0" text="User Name :">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="userNameField" onAction="#handleuserNameField" prefHeight="80.0" prefWidth="319.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="461.0" />
+                  <HBox prefHeight="71.0" prefWidth="461.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="165.0" text="Password :">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" onAction="#handlepasswordField" prefHeight="63.0" prefWidth="344.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="108.0" prefWidth="461.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="enter" mnemonicParsing="false" onAction="#handleEnterButton" prefHeight="49.0" prefWidth="202.0" text="Enter">
+                           <HBox.margin>
+                              <Insets top="25.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</FlowPane>

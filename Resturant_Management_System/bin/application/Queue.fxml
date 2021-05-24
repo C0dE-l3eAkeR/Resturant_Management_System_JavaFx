@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Queqe_Panel_Controller">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            
+            
+            <Label layoutX="308.0" layoutY="38.0" prefHeight="40.0" prefWidth="228.0" text="ORDER QUEUE">
+               <font>
+                  <Font name="Bodoni MT" size="28.0" />
+               </font>
+            </Label>
+            <TableView fx:id="OrderTable" layoutX="50.0" layoutY="99.0" prefHeight="538.0" prefWidth="763.0">
+              <columns>
+                <TableColumn fx:id="OrderIDT" prefWidth="70.0" text="Order ID" />
+                <TableColumn fx:id="TableNoT" prefWidth="76.0" text="Table No" />
+                  <TableColumn fx:id="WaiterIDT" prefWidth="130.0" text="Waiter ID" />
+                  <TableColumn fx:id="FoodIDT" prefWidth="115.0" text="Food ID" />
+                  <TableColumn fx:id="FoodNameT" prefWidth="122.0" text="Food Name" />
+                  <TableColumn fx:id="QuantityT" prefWidth="72.0" text="Quantity" />
+                  <TableColumn fx:id="PriceT" prefWidth="87.0" text="Price Tk." />
+                  <TableColumn fx:id="OrderTypeT" prefWidth="96.0" text="Order Type" />
+              </columns>
+
+            </TableView>
+            <Button fx:id="Cancel" layoutX="697.0" layoutY="659.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="40.0" prefWidth="104.0" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

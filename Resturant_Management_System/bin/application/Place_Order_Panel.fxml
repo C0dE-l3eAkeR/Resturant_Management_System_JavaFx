@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Place_Order_Panel_Controller">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="76.0" layoutY="60.0" prefHeight="17.0" prefWidth="56.0" text="Order ID" />
+            <Label layoutX="347.0" layoutY="60.0" text="Table No" />
+            <Label layoutX="76.0" layoutY="115.0" text="Food ID" />
+            <Label layoutX="357.0" layoutY="115.0" />
+            <Label layoutX="581.0" layoutY="115.0" text="Quantity" />
+            <Label layoutX="333.0" layoutY="115.0" text="Food Name" />
+            <Label layoutX="581.0" layoutY="60.0" text="Waiter ID" />
+            <Label layoutX="76.0" layoutY="171.0" text="Price Tk." />
+            <Label layoutX="334.0" layoutY="171.0" text="Order Type" />
+            <TableView fx:id="OrderTable" layoutX="32.0" layoutY="276.0" prefHeight="399.0" prefWidth="769.0">
+              <columns>
+                <TableColumn fx:id="OrderIDT" prefWidth="70.0" text="Order ID" />
+                <TableColumn fx:id="TableNoT" prefWidth="76.0" text="Table No" />
+                  <TableColumn fx:id="WaiterIDT" prefWidth="130.0" text="Waiter ID" />
+                  <TableColumn fx:id="FoodIDT" prefWidth="115.0" text="Food ID" />
+                  <TableColumn fx:id="FoodNameT" prefWidth="122.0" text="Food Name" />
+                  <TableColumn fx:id="QuantityT" prefWidth="72.0" text="Quantity" />
+                  <TableColumn fx:id="PriceT" prefWidth="87.0" text="Price Tk." />
+                  <TableColumn fx:id="OrderTypeT" prefWidth="96.0" text="Order Type" />
+              </columns>
+            </TableView>
+            <TextField fx:id="OrderID" layoutX="144.0" layoutY="56.0" onAction="#handleOrderID" />
+            <TextField fx:id="TableNo" layoutX="402.0" layoutY="56.0" onAction="#handleTableNo" />
+            <TextField fx:id="WaiterID" layoutX="644.0" layoutY="56.0" onAction="#handleWaiterID" />
+            <TextField fx:id="FoodID" layoutX="144.0" layoutY="111.0" onAction="#handleFoodID" />
+            <TextField fx:id="FoodName" layoutX="402.0" layoutY="111.0" onAction="#hanbdleFoodName" />
+            <TextField fx:id="Quantity" layoutX="644.0" layoutY="111.0" onAction="#handleQuantity" />
+            <TextField fx:id="Price" layoutX="144.0" layoutY="167.0" onAction="#handlePrice" />
+            <Button fx:id="ADD" layoutX="282.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleADDButton" prefHeight="38.0" prefWidth="130.0" text="ADD" />
+            <Button fx:id="PlaceOrder" layoutX="653.0" layoutY="213.0" mnemonicParsing="false" onAction="#handlePlaceOrderButton" prefHeight="38.0" prefWidth="130.0" text="Place Order" />
+            <ComboBox fx:id="OrderType" layoutX="407.0" layoutY="167.0" onAction="#handleOrderType" prefWidth="150.0" />
+            <Button fx:id="Remove" layoutX="443.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleRemoveButton" prefHeight="38.0" prefWidth="130.0" text="Remove" />
+         </children></Pane>
+   </children>
+</StackPane>

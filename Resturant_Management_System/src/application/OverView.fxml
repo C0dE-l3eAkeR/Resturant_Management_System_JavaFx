@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OverView_Panel_Controller">
+   <children>
+      <Pane prefHeight="456.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="125.0" layoutY="30.0" prefHeight="35.0" prefWidth="357.0" text="Welcome To R.M.S Of Jordan" textFill="#3d819e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="121.0" text="Total Employees">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="176.0" text="Total Food Items">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="239.0" text="Total Oders Pending">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="296.0" text="Total Order Today">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="403.0" layoutY="437.0" text="Time :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TotalEmployees" layoutX="217.0" layoutY="117.0" />
+            <TextField fx:id="TotalFoodItems" layoutX="217.0" layoutY="172.0" />
+            <TextField fx:id="PendingOrders" layoutX="217.0" layoutY="235.0" />
+            <TextField fx:id="OrderToday" layoutX="217.0" layoutY="292.0" />
+            <Label fx:id="time" layoutX="452.0" layoutY="433.0" prefHeight="25.0" prefWidth="134.0" text="Clock">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
